@@ -1,9 +1,13 @@
 import React, {Component} from 'react';
 import Markers from './marker';
-import Data from '../db.json';
 
 class Map extends Component {
-	
+	componentWillMount() {
+		fetch('https://my-json-server.typicode.com/freja11/mapMarker/db')
+		.then(res => res.json())
+		.then(data => console.log(data));
+	}
+
 	render() {
 		return (
 			<div>

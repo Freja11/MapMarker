@@ -1,11 +1,12 @@
 {
-  "posts": [
+  "markers": [
     {
       "id": 1,
       "title": "hello"
+    },
+    {
+      "id": 2,
+      "title": "hello"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
