@@ -15,24 +15,18 @@ class MarkerComponent extends Component {
 		.then(markers => this.setState({markers}));
 	}
 
-	renderMarkers() {
+
+  render() {
     return this.state.markers.map(marker => {
       return (
-        <div key={marker.id}>
-        	<p>{marker.title}</p>
-        </div>
+        <Marker key={marker.id}
+          title = {marker.title}
+          name={marker.name}
+          position={marker.position}
+        />
       );
     })
   }
-	render() {
-		
-		return (
-			<div>
-				<h1>Markers</h1>
-				{this.renderMarkers()}
-			</div>
-		)
-	}
 }
 
 export default MarkerComponent;
