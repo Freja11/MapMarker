@@ -3,6 +3,6 @@
     {"id": 1,"title": "Sarajevo", "name": "Something", "position": { "lat": 43.85572, "lng": 18.40299}},
     {"id": 2,"title": "Dobrinja", "name": "Something", "position": { "lat": 43.823883, "lng": 18.353798}},
     {"id": 3,"title": "Bojnik", "name": "Something", "position": { "lat": 43.873556, "lng": 18.277475}},
-    {"id": 4,"title": "Bojnik", "name": "Something", "position": { "lat": 43.878556, "lng": 18.277475}},
+    {"id": 4,"title": "Bojnik", "name": "Something", "position": { "lat": 43.878556, "lng": 18.277475}}
   ]
 }

@@ -17,6 +17,7 @@ class MarkerComponent extends Component {
 
 
   render() {
+  	console.log(this.state.markers);
     return this.state.markers.map(marker => {
       return (
         <Marker key={marker.id}
