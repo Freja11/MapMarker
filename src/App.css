@@ -12,6 +12,8 @@
   height: 150px;
   padding: 20px;
   color: white;
+
+  
 }
 
 .App-title {
@@ -20,6 +22,18 @@
 
 .App-intro {
   font-size: large;
+
+}
+
+.Button {
+  background-color: #4FC3F7;
+  border-color: #4FC3F7;
+  height: 50px;
+  float: right;
+  margin-top: -35px;
+
+
+
 }
 
 @keyframes App-logo-spin {

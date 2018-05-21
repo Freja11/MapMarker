@@ -25,9 +25,12 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React + Google Maps</h1>
+          <ToggleMarkers handleClick={this.clickie.bind(this)} />
         </header>
-        <ToggleMarkers handleClick={this.clickie.bind(this)} />
-        <MapComponent toggleMarkers={this.state.showMarkers} />
+        <div className="App-intro">
+          <MapComponent toggleMarkers={this.state.showMarkers} />
+        </div>
+        
       </div>
     );
   }

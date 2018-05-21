@@ -3,5 +3,11 @@
     {"id": 1,"title": "Sarajevo", "name": "Sarajevo, capital of Bosnia and Herzegovina.", "position": { "lat": 43.85572, "lng": 18.40299}},
     {"id": 2,"title": "Dobrinja", "name": "Dobrinja is a neighbourhood of Sarajevo", "position": { "lat": 43.823883, "lng": 18.353798}},
     {"id": 3,"title": "Bojnik", "name": "Bojnik is a place in Novi Grad, Sarajevo.", "position": { "lat": 43.873556, "lng": 18.277475}}
+  ],
+
+  "places": [
+  	{"id": 1,"title": "National Museum", "name": "It was established in 1888, having originally been conceived around 1850", "position": { "lat": 43.855026, "lng": 18.402623}},
+    {"id": 2,"title": "Sacred Heart Cathedral", "name": "It is the largest cathedral in B&H.", "position": { "lat": 43.859419 , "lng": 18.425417}},
+    {"id": 3,"title": "Gazi Husrev-beg Mosque", "name": "Built in 16th century, it is the largest historical mosque in B&H", "position": { "lat": 43.859183, "lng": 18.429194}}
   ]
 }

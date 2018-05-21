@@ -9,7 +9,7 @@ class Toggle extends Component {
   }
 
   render() {
-    return <button onClick={this.props.handleClick.bind(this)}>Click Me</button>;
+    return <button className="Button" onClick={this.props.handleClick.bind(this)}>Visibility of markers</button>;
   }
 }
 
