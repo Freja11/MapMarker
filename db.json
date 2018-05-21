@@ -1,8 +1,7 @@
 {
   "markers": [
-    {"id": 1,"title": "Sarajevo", "name": "Something", "position": { "lat": 43.85572, "lng": 18.40299}},
-    {"id": 2,"title": "Dobrinja", "name": "Something", "position": { "lat": 43.823883, "lng": 18.353798}},
-    {"id": 3,"title": "Bojnik", "name": "Something", "position": { "lat": 43.873556, "lng": 18.277475}},
-    {"id": 4,"title": "Bojnik", "name": "Something", "position": { "lat": 43.878556, "lng": 18.277475}}
+    {"id": 1,"title": "Sarajevo", "name": "Sarajevo, capital of Bosnia and Herzegovina.", "position": { "lat": 43.85572, "lng": 18.40299}},
+    {"id": 2,"title": "Dobrinja", "name": "Dobrinja is a neighbourhood of Sarajevo", "position": { "lat": 43.823883, "lng": 18.353798}},
+    {"id": 3,"title": "Bojnik", "name": "Bojnik is a place in Novi Grad, Sarajevo.", "position": { "lat": 43.873556, "lng": 18.277475}},
   ]
 }

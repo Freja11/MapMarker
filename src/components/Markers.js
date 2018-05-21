@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
-class MarkerComponent extends Component {
+class Markers extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -12,13 +12,11 @@ class MarkerComponent extends Component {
 	componentWillMount() {
 		fetch('https://my-json-server.typicode.com/freja11/mapMarker/markers')
 		.then(response => response.json())
-		.then(markers => this.setState({markers}));
+		.then(markers => this.setState({markers: markers}));
 	}
 
-
-  render() {
-  	console.log(this.state.markers);
-    return this.state.markers.map(marker => {
+  renderMarkers() {
+	return this.state.markers.map(marker => {
       return (
         <Marker key={marker.id}
           title = {marker.title}
@@ -30,4 +28,4 @@ class MarkerComponent extends Component {
   }
 }
 
-export default MarkerComponent;
+export default Markers;
