@@ -28,7 +28,6 @@ export class MapContainer extends Component {
 
   componentWillMount() {
     this.getMarkers()
-    this.getPlaces()
   }
 
   componentWillUpdate(prevProps, prevState, snapshot) {
@@ -48,12 +47,6 @@ export class MapContainer extends Component {
     .then(markers => this.setState({markers: markers}));
   }
 
-  getPlaces() {
-    fetch('https://my-json-server.typicode.com/freja11/mapMarker/places')
-    .then(response => response.json())
-    .then(places => this.setState({places: places}));
-  }
-
 
   renderMarkers() {
   return this.state.markers.map(marker => {
@@ -67,16 +60,6 @@ export class MapContainer extends Component {
     })
   }
 
-  renderPlaces() {
-    return this.state.places.map(place => {
-       <Marker key={place.id}
-        title = {place.title}
-        name = {place.name}
-        position={place.position}
-      />
-    })
-  }
-
   render() {
     return (
       <Map google={this.props.google}
@@ -86,7 +69,6 @@ export class MapContainer extends Component {
         }}
       zoom={11}>
       {this.renderMarkers()}
-      {this.renderPlaces()}
       
       <InfoWindow
         marker={this.state.activeMarker}
