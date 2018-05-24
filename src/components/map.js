@@ -1,5 +1,7 @@
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux'
 
 export class MapContainer extends Component {
 
@@ -83,6 +85,12 @@ export class MapContainer extends Component {
     );
   }
 }
+
+// REDUX PARTS COMMENTED OUT AND NOW IT WORKS WITH REACT JS
+/*
+PostForm.propTypes = {
+  createMarker: PropTypes.func.isRequired
+};*/
 
 export default GoogleApiWrapper({
   apiKey: ('AIzaSyAReBJ8T7eBmBEuHaVv50ME6MBnO98kePw')

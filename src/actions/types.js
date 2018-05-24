@@ -1,0 +1,1 @@
+export const FETCH_MARKERS = 'FETCH_MARKERS';
